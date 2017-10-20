@@ -1,0 +1,35 @@
+---
+statsdaemon_listen_addr: ":8125"
+statsdaemon_admin_addr: ":8126"
+statsdaemon_profile_addr: ""
+statsdaemon_graphite_addr: "127.0.0.1:2003"
+statsdaemon_flush_interval: 60
+statsdaemon_processes: 4
+statsdaemon_instance: "${HOST}"
+
+statsdaemon_legacy_namespace: true
+statsdaemon_prefix_rates: "stats."
+statsdaemon_prefix_counters: "stats_counts."
+statsdaemon_prefix_timers: "stats.timers."
+statsdaemon_prefix_gauges: "stats.gauges."
+
+statsdaemon_prefix_m20_rates: ""
+statsdaemon_prefix_m20_counters: ""
+statsdaemon_prefix_m20_timers: ""
+statsdaemon_prefix_m20_gauges: ""
+
+statsdaemon_flush_rates: true
+statsdaemon_flush_counts: false
+
+statsdaemon_percentile_thresholds: "90,75"
+statsdaemon_max_timers_per_s: 1000
+
+statsdaemon_proftrigger_path: "/tmp/profiletrigger/"
+statsdaemon_proftrigger_heap_freq: "0"
+statsdaemon_proftrigger_heap_min_diff: "1h"
+statsdaemon_proftrigger_heap_thresh: 10000000
+
+statsdaemon_proftrigger_cpu_freq: "0"
+statsdaemon_proftrigger_cpu_min_diff: "1h"
+statsdaemon_proftrigger_cpu_dur: "5s"
+statsdaemon_proftrigger_cpu_thresh: 80

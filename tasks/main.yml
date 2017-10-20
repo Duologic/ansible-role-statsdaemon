@@ -1,0 +1,13 @@
+---
+- name: Install statsdaemon
+  yum: pkg=statsdaemon state=installed
+  when: ansible_os_family == "Debian"
+
+- name: Install statsdaemon
+  yum: pkg=statsdaemon state=installed
+  when: ansible_os_family == "RedHat"
+
+- name: Install statsdaemon configuration
+  template:
+      src: statsdaemon.ini.j2
+      dest: /etc/statsdaemon.ini
