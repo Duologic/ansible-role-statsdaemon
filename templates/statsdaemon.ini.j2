@@ -1,0 +1,34 @@
+listen_addr = "{{ statsdaemon_listen_addr }}"
+admin_addr = "{{ statsdaemon_admin_addr }}"
+profile_addr = "{{ statsdaemon_profile_addr }}"
+graphite_addr = "{{ statsdaemon_graphite_addr }}"
+flush_interval = {{ statsdaemon_flush_interval }}
+processes = {{ statsdaemon_processes }}
+instance = "{{ statsdaemon_instance }}"
+
+legacy_namespace = {{ statsdaemon_legacy_namespace }}
+prefix_rates = "{{ statsdaemon_prefix_rates }}"
+prefix_counters = "{{ statsdaemon_prefix_counters }}"
+prefix_timers = "{{ statsdaemon_prefix_timers }}"
+prefix_gauges = "{{ statsdaemon_prefix_gauges }}"
+
+prefix_m20_rates = "{{ statsdaemon_prefix_m20_rates }}"
+prefix_m20_counters = "{{ statsdaemon_prefix_m20_counters }}"
+prefix_m20_timers = "{{ statsdaemon_prefix_m20_timers }}"
+prefix_m20_gauges = "{{ statsdaemon_prefix_m20_gauges }}"
+
+flush_rates = {{ statsdaemon_flush_rates }}
+flush_counts = {{ statsdaemon_flush_counts }}
+
+percentile_thresholds = "{{ statsdaemon_percentile_thresholds }}"
+max_timers_per_s = {{ statsdaemon_max_timers_per_s }}
+
+proftrigger_path = "{{ statsdaemon_proftrigger_path }}"
+proftrigger_heap_freq = "{{ statsdaemon_proftrigger_heap_freq }}"
+proftrigger_heap_min_diff = "{{ statsdaemon_proftrigger_heap_min_diff }}"
+proftrigger_heap_thresh = {{ statsdaemon_proftrigger_heap_thresh }}
+
+proftrigger_cpu_freq = "{{ statsdaemon_proftrigger_cpu_freq }}"
+proftrigger_cpu_min_diff = "{{ statsdaemon_proftrigger_cpu_min_diff }}"
+proftrigger_cpu_dur = "{{ statsdaemon_proftrigger_cpu_dur }}"
+proftrigger_cpu_thresh = {{ statsdaemon_proftrigger_cpu_thresh }}
