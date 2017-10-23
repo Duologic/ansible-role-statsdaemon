@@ -1,4 +1,5 @@
 ---
+statsdaemon_enabled_on_boot: true
 statsdaemon_listen_addr: ":8125"
 statsdaemon_admin_addr: ":8126"
 statsdaemon_profile_addr: ""
