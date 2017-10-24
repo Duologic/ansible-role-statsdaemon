@@ -1,6 +1,6 @@
 ---
 - name: Install statsdaemon
-  yum: pkg=statsdaemon state=installed
+  apt: pkg=statsdaemon state=present
   when: ansible_os_family == "Debian"
 
 - name: Install statsdaemon
