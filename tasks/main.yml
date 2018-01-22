@@ -4,13 +4,14 @@
   when: ansible_os_family == "Debian"
 
 - name: Install statsdaemon
-  yum: pkg=statsdaemon state=installed
+  yum: pkg=statsdaemon-1.0.0_20_g160a8c6-1 state=installed
   when: ansible_os_family == "RedHat"
 
 - name: Install statsdaemon configuration
   template:
       src: statsdaemon.ini.j2
       dest: /etc/statsdaemon.ini
+  notify: restart statsdaemon
 
 - name: Ensure statsdaemon is started and enabled on boot
   service:

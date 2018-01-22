@@ -6,7 +6,7 @@ flush_interval = {{ statsdaemon_flush_interval }}
 processes = {{ statsdaemon_processes }}
 instance = "{{ statsdaemon_instance }}"
 
-legacy_namespace = {{ statsdaemon_legacy_namespace }}
+legacy_namespace = {{ statsdaemon_legacy_namespace|lower }}
 prefix_rates = "{{ statsdaemon_prefix_rates }}"
 prefix_counters = "{{ statsdaemon_prefix_counters }}"
 prefix_timers = "{{ statsdaemon_prefix_timers }}"
@@ -17,8 +17,8 @@ prefix_m20_counters = "{{ statsdaemon_prefix_m20_counters }}"
 prefix_m20_timers = "{{ statsdaemon_prefix_m20_timers }}"
 prefix_m20_gauges = "{{ statsdaemon_prefix_m20_gauges }}"
 
-flush_rates = {{ statsdaemon_flush_rates }}
-flush_counts = {{ statsdaemon_flush_counts }}
+flush_rates = {{ statsdaemon_flush_rates|lower }}
+flush_counts = {{ statsdaemon_flush_counts|lower }}
 
 percentile_thresholds = "{{ statsdaemon_percentile_thresholds }}"
 max_timers_per_s = {{ statsdaemon_max_timers_per_s }}

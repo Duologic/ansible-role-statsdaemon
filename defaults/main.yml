@@ -8,9 +8,9 @@ statsdaemon_flush_interval: 60
 statsdaemon_processes: 4
 statsdaemon_instance: "${HOST}"
 
-statsdaemon_legacy_namespace: true
-statsdaemon_prefix_rates: "stats."
-statsdaemon_prefix_counters: "stats_counts."
+statsdaemon_legacy_namespace: false
+statsdaemon_prefix_rates: "stats.counters."
+statsdaemon_prefix_counters: "stats.counters."
 statsdaemon_prefix_timers: "stats.timers."
 statsdaemon_prefix_gauges: "stats.gauges."
 
@@ -20,7 +20,7 @@ statsdaemon_prefix_m20_timers: ""
 statsdaemon_prefix_m20_gauges: ""
 
 statsdaemon_flush_rates: true
-statsdaemon_flush_counts: false
+statsdaemon_flush_counts: true
 
 statsdaemon_percentile_thresholds: "90,75"
 statsdaemon_max_timers_per_s: 1000
