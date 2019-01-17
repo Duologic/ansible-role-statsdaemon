@@ -12,10 +12,11 @@ prefix_counters = "{{ statsdaemon_prefix_counters }}"
 prefix_timers = "{{ statsdaemon_prefix_timers }}"
 prefix_gauges = "{{ statsdaemon_prefix_gauges }}"
 
-prefix_m20_rates = "{{ statsdaemon_prefix_m20_rates }}"
-prefix_m20_counters = "{{ statsdaemon_prefix_m20_counters }}"
-prefix_m20_timers = "{{ statsdaemon_prefix_m20_timers }}"
-prefix_m20_gauges = "{{ statsdaemon_prefix_m20_gauges }}"
+# Buggy, see https://github.com/raintank/statsdaemon/issues/24
+#prefix_m20_rates = "{{ statsdaemon_prefix_m20_rates }}"
+#prefix_m20_counters = "{{ statsdaemon_prefix_m20_counters }}"
+#prefix_m20_timers = "{{ statsdaemon_prefix_m20_timers }}"
+#prefix_m20_gauges = "{{ statsdaemon_prefix_m20_gauges }}"
 
 flush_rates = {{ statsdaemon_flush_rates|lower }}
 flush_counts = {{ statsdaemon_flush_counts|lower }}
