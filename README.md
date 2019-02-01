@@ -1,6 +1,8 @@
 Duologic.statsdaemon
 ====================
 
+[![Build Status](https://travis-ci.org/Duologic/ansible-role-statsdaemon.svg?branch=master)](https://travis-ci.org/Duologic/ansible-role-statsdaemon)
+
 This role configures and installs statsdaemon with the OS package manager.
 
 Requriments
