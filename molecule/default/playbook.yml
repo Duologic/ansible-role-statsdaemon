@@ -23,5 +23,5 @@
             version: 'xenial'
 
   roles:
-    - role: computology.packagecloud
-    - role: Duologic.statsdaemon
+      - role: computology.packagecloud
+      - role: Duologic.statsdaemon
