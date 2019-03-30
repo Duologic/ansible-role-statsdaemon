@@ -5,7 +5,7 @@ Duologic.statsdaemon
 
 This role configures and installs statsdaemon with the OS package manager.
 
-Requriments
+Requirements
 -----------
 
 You probably need to add a repository that has the statsdaemon package for your distribution. I've used raintaink's PackageCloud. See the example Playbook.
