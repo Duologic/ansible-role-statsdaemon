@@ -25,6 +25,9 @@
             os: 'ubuntu'
             version: 'xenial'
 
-  roles:
-      - role: Duologic.packagecloud
-      - role: Duologic.statsdaemon
+  tasks:
+      - import_role:
+            name: Duologic.packagecloud
+      - meta: flush_handlers
+      - import_role:
+            name: Duologic.statsdaemon
